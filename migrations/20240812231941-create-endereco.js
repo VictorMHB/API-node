@@ -1,7 +1,6 @@
 'use strict';
 
-const { primaryKeyAttribute } = require("../models/enderecos");
-
+/** @type { import('sequelize-cli').Migration } */
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable('enderecos', {
@@ -42,7 +41,15 @@ module.exports = {
       MunicipioIBGE: {
         type: Sequelize.STRING,
         allowNull: false,
-      }
+      },
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updateAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
     });
   },
 
