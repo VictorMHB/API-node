@@ -3,11 +3,11 @@ const { DataTypes, Model} = require('sequelize');
 class Endereco extends Model {}
 
 Endereco.init({
-        id: {
+        Id: {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        cep: {
+        Cep: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -15,11 +15,11 @@ Endereco.init({
             type: DataTypes.STRING,
             allowNull: false,
         },
-        numero: {
+        Numero: {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        complemento: {
+        Complemento: {
             type: DataTypes.STRING,
             allowNull: false,
         },
